@@ -18,10 +18,10 @@ def is_enabled(value, default):
 # Bot Information
 API_ID = int(environ.get("API_ID", "21857983"))
 API_HASH = environ.get("API_HASH", "e469e84c943ce3b8b056eb6a296f2c67")
-BOT_TOKEN = environ.get("BOT_TOKEN", "8030607379:AAFfRjpTIUOsF0aNtFQxLDvoTEmJx3JaT7U")
+BOT_TOKEN = environ.get("BOT_TOKEN", "8030607379:AAE4OT4E3azgLrGwHeWaCsi_NqRijb1XmSg")
 
 PICS = (environ.get('PICS', 'https://envs.sh/BcS.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '833465134 6769726996').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '833465134 5333610468').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "Alienstream_bot") # without @
 PORT = environ.get("PORT", "8080")
 
@@ -54,12 +54,12 @@ BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 # Verify Info :-
-VERIFY_MODE = bool(environ.get('VERIFY_MODE', False)) # Set True or False
+VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "") # shortlink domain without https://
-SHORTLINK_API = environ.get("SHORTLINK_API", "") # shortlink api
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "get2short.com") # shortlink domain without https://
+SHORTLINK_API = environ.get("SHORTLINK_API", "0ca9d7c312e534b02d74e95bef7eb06a11dd0314") # shortlink api
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/bharatiyaaofficial") # how to open link 
 
 # Website Info:
 WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', False)) # Set True or False
@@ -78,7 +78,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://storestream-397b4efe9591.herokuapp.com/")
+URL = environ.get("URL", "https://lit-hamlet-64912-67e33e108146.herokuapp.com/")
 
 
 
